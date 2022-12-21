@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог про кофе</title>
+</head>
+<body>
+    
+    <form>
+        <table>
+            <caption><h2 align="left">Блог про кофе</h2></caption>
+           <tr>
+            <td align="right">Название напитка</td>
+            <td><input type="text" name="title" placeholder="Американо" required></td>
+           </tr>
+           <tr>
+            <td align="right">Сорт кофе</td>
+            <td> 
+                <select name="sort" id="">
+                    <option value="Арабика">Арабика</option>
+                    <option value="Робуста">Робуста</option>
+                    <option value="Либерика">Либерика</option>
+                    <option value="Эксцельса ">Эксцельса</option>
+                </select></td>
+           </tr>
+           <tr>
+            <td align="right">Крепость обжаривания</td>
+            <td>
+                <br><input type="radio" name="strong" value="Слабо">Слабо
+                <br><input type="radio" name="strong" value="Средне" checked>Средне
+                <br><input type="radio" name="strong" value="Крепко">Крепко
+            </td>
+           </tr>
+           <tr>
+            <td align="right">Изображение</td>
+            <td><input type="url" name="image" placeholder="ссылка на изображение" required></td>
+           </tr>
+           <tr>
+            <td align="right">Стоимость напитка</td>
+            <td><input type="number" name="cost" placeholder="100" min="1" required></td>
+           </tr>
+           <tr>
+            <td align="right">Описание</td>
+            <td><textarea name="description" placeholder="Немного про напиток"></textarea></td>
+           </tr>
+           <tr>
+            <td> </td>
+            <td><input type="submit" value="Добавить напиток"></td>
+           </tr>
+    </form>
+    <br>
+    <table id="table" border="double">
+        <tr>
+            <td><h3>Изображение</h3></td>
+            <td><h3>Название</h3></td>
+            <td><h3>Сорт</h3></td>
+            <td><h3>Крепость обжарки</h3></td>
+            <td><h3>Стоимость</h3></td>
+            <td><h3>Описание</h3></td>
+        </tr>
+    </table>
+    <script src="https://queen-leksa.github.io/111/script.js"></script>
+</body>
+</html>
